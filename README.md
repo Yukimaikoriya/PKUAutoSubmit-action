@@ -1,5 +1,7 @@
 # PKUAutoSubmit-action
 
+*基于[YOUSIKI/PKUAutoSubmit-action](https://github.com/YOUSIKI/PKUAutoSubmit-action)，进行一些修改以匹配[PKUAutoSubmit](https://github.com/Bruuuuuuce/PKUAutoSubmit)的最新版本*
+
 百京大学燕园云战役自动填报小助手 Github Action
 
 ## 工作原理
@@ -24,7 +26,7 @@
 ### Step2 编写 Github Actions 配置文件
 
 在仓库的 `.github/workflows` 目录下创建新文件 `main.yml`，或者直接在网页中的 Actions 选项卡中创建新的自定义 workflow。
-可以仿照[我的配置文件](https://github.com/YOUSIKI/PKUAutoSubmit-Github-Action-Repo/blob/master/.github/workflows/autosubmit.yml)编写你的 workflow。
+可以仿照[我的配置文件](.github/workflows/main.yml)编写你的 workflow。
 
 - `schedule` 部分是用来定时运行的，每日执行两次。
 - `username` 就是你的学号。
@@ -42,7 +44,7 @@
 
 ### Step4 手动运行查看结果
 
-在[我的配置文件](https://github.com/YOUSIKI/PKUAutoSubmit-Github-Action-Repo/blob/master/.github/workflows/autosubmit.yml)中，设置了手动运行 workflow 开关。
+在[我的配置文件](.github/workflows/main.yml)中，设置了手动运行 workflow 开关。
 你可以在如下位置找到开关，手动运行 PKUAutoSubmit：
 
 ![](images/workflow_dispatch.png)
