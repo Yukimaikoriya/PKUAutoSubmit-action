@@ -5,6 +5,7 @@ import sys
 import argparse
 import warnings
 from selenium import webdriver
+from selenium.webdriver.chrome.options import Options
 
 from func import run
 
@@ -12,15 +13,8 @@ warnings.filterwarnings('ignore')
 
 
 def sys_path():
-    path = os.path.join(os.getcwd(), 'phantomjs', 'bin')
-    if sys.platform.startswith('win'):
-        return os.path.join(path, 'phantomjs.exe')
-    elif sys.platform.startswith('linux'):
-        return os.path.join(path, 'phantomjs-linux')
-    elif sys.platform.startswith('darwin'):
-        return os.path.join(path, 'phantomjs')
-    else:
-        raise Exception('暂不支持该系统')
+    path = os.path.join(os.getcwd(), 'chromedriver', 'bin', 'chromedriver')
+    return path
 
 
 if __name__ == '__main__':
@@ -39,8 +33,11 @@ if __name__ == '__main__':
     args = parser.parse_args()
 
     print('Driver Launching...')
+    chrome_options = Options()
+    chrome_options.add_argument("--headless")
     assert os.path.isfile(sys_path())
-    driver_pjs = webdriver.PhantomJS(
+    driver_pjs = webdriver.Chrome(
+        options=chrome_options,
         executable_path=sys_path(),
         service_args=['--ignore-ssl-errors=true', '--ssl-protocol=TLSv1'],
     )
