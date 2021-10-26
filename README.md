@@ -1,8 +1,10 @@
 # PKUAutoSubmit-action
 
-*基于[YOUSIKI/PKUAutoSubmit-action](https://github.com/YOUSIKI/PKUAutoSubmit-action)，进行一些修改以匹配[PKUAutoSubmit](https://github.com/Bruuuuuuce/PKUAutoSubmit)的最新版本*
+*基于[YOUSIKI/PKUAutoSubmit-action](https://github.com/YOUSIKI/PKUAutoSubmit-action)(原项目被Archive了)，进行一些修改以匹配[PKUAutoSubmit](https://github.com/Bruuuuuuce/PKUAutoSubmit)的最新版本*
 
-百京大学燕园云战役自动填报小助手 Github Action
+*这个文档基本上照抄原项目*
+
+百京大学出入校备案自动填报小助手 Github Action
 
 ## 工作原理
 
