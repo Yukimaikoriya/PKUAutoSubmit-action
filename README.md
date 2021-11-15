@@ -1,5 +1,7 @@
 # PKUAutoSubmit-action
 
+**这个Repo已经弃用了，请前往[PKUAutoSubmit-action-1](https://github.com/Yukimaikoriya/PKUAutoSubmit-action-1/)**
+
 *基于[YOUSIKI/PKUAutoSubmit-action](https://github.com/YOUSIKI/PKUAutoSubmit-action)，进行一些修改以匹配[PKUAutoSubmit](https://github.com/Bruuuuuuce/PKUAutoSubmit)的最新版本*
 
 百京大学燕园云战役自动填报小助手 Github Action
